@@ -17,8 +17,6 @@ In order to pre-train and then finetune a [T5 small](https://github.com/google-r
     ```
     The new model has to be trained on the entire pre-training corpus.
 
-    https://drive.google.com/drive/folders/1uJv-kljY1Q59fa-TdkpXOOd9QEG5OZDa?usp=sharing
-
 * ##### Set up a GCS Bucket
     To Set up a new GCS Bucket for training and fine-tuning a T5 Model, please follow the orignal guide provided by <a href='https://www.google.com'> Google </a>. 
     Here the link: https://cloud.google.com/storage/docs/quickstart-console
@@ -37,5 +35,4 @@ In order to pre-train and then finetune a [T5 small](https://github.com/google-r
 
 * ##### How to generate the predictions
 
-    First you need to convert the TF model into a pytorch model by using the script you can find here: 
-    Subsequently, you can run <a href='https://github.com/dl4se/DL4SE_2020/blob/master/Code/run-on-test-set/generate_results.ipynb'> Generate Results </a>
+    First you need to convert the TF model into a pytorch model by using <a href='https://github.com/dl4se/DL4SE_2020/blob/master/Code/run-on-test-set/tf_2_pytorch_T5.py'> TF_to_Pytorch </a>, then run <a href='https://github.com/dl4se/DL4SE_2020/blob/master/Code/run-on-test-set/generate_results.ipynb'> Generate Results </a>
