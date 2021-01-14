@@ -36,3 +36,7 @@ In order to pre-train and then finetune a [T5 small](https://github.com/google-r
 * ##### How to generate the predictions
 
     First you need to convert the TF model into a pytorch model by using <a href='https://github.com/dl4se/DL4SE_2020/blob/master/Code/run-on-test-set/tf_2_pytorch_T5.py'> TF_to_Pytorch </a>, then run <a href='https://github.com/dl4se/DL4SE_2020/blob/master/Code/run-on-test-set/generate_results.ipynb'> Generate Results </a>
+
+
+
+**Additional:** In <a href='https://github.com/dl4se/DL4SE_2020/tree/master/Code/Miscellaneous'>Miscellaneous</a> folder, you can find all the additional scripts we used for computing the BLEU score and the overlap metrics.
