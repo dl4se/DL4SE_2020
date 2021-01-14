@@ -1,10 +1,13 @@
 # Studying the Usage of Text-To-Text Transfer Transformer to Support Code-Related Tasks
 
-In this work, we study a novel transformers architecture T5(text-to-text Transfer Transformer) to support Code-Related Tasks.
+In this work, we explore the capabilities of novel transformers architecture, ***T5(Text-To-Text Transfer Transformer)*** to support Code-Related Tasks.
 
-#### Learning Pipeline
+For all the details :point_right: <a href=''>:page_facing_up:</a>
 
-In order to pre-train and then finetune a [T5 small](https://github.com/google-research/text-to-text-transfer-transformer) we need a new sentencepiece model to accomodate the expanded vocabulary given by the java programming language, an abstracted version of the java tokens and tecnical natural language.
+#### Pipeline
+
+In order to pre-train and then finetune a [T5 small](https://github.com/google-research/text-to-text-transfer-transformer) we need a new sentencepiece model to accomodate the expanded vocabulary given by the java programming language,  abstracted java tokens and tecnical natural language.
+
 
 *  ##### How to train a new <a href='https://github.com/google/sentencepiece/blob/master/python/README.md'>SPmodel</a>
 
@@ -38,5 +41,4 @@ In order to pre-train and then finetune a [T5 small](https://github.com/google-r
     First you need to convert the TF model into a pytorch model by using <a href='https://github.com/dl4se/DL4SE_2020/blob/master/Code/run-on-test-set/tf_2_pytorch_T5.py'> TF_to_Pytorch </a>, then run <a href='https://github.com/dl4se/DL4SE_2020/blob/master/Code/run-on-test-set/generate_results.ipynb'> Generate Results </a>
 
 
-
-**Additional:** In <a href='https://github.com/dl4se/DL4SE_2020/tree/master/Code/Miscellaneous'>Miscellaneous</a> folder, you can find all the additional scripts we used for computing the BLEU score and the overlap metrics.
+**Additional:** In <a href='https://github.com/dl4se/DL4SE_2020/tree/master/Code/Miscellaneous'>Miscellaneous</a> folder, you can find all the additional scripts we used for computing the BLEU score and the overlap metrics. Furthermore, <a href='https://drive.google.com/file/d/1BWhr4KbAp6_NKc_BH3lPTjfM1Hzq71Ct/view?usp=sharing'>here</a> and <a href='https://drive.google.com/drive/folders/1caP5-OpurKOMhkqfsrkHxKarEoYVjiFI?usp=sharing'>here</a> you can also experiment with our pre-trained and fine-tuned models.
