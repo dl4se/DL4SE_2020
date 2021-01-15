@@ -6,7 +6,8 @@ For all the details :point_right: <a href=''>:page_facing_up:</a>
 
 #### Pipeline
 
-In order to pre-train and then finetune a [T5 small](https://github.com/google-research/text-to-text-transfer-transformer) we need a new sentencepiece model to accomodate the expanded vocabulary given by the java programming language,  abstracted java tokens and tecnical natural language.
+In order to pre-train and then finetune a [T5 small](https://github.com/google-research/text-to-text-transfer-transformer) small model, we need a new sentencepiece model to accommodate the expanded vocabulary given by the java programming language, abstracted java tokens, and technical natural language.
+
 
 
 *  ##### How to train a new <a href='https://github.com/google/sentencepiece/blob/master/python/README.md'>SPmodel</a>
